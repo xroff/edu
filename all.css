@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
 
 html {
-   height: 100%;
+	min-height: 100%;
 }
 
 body {
@@ -78,11 +78,11 @@ a:visited {
 }
 
 #footer {
-	float: top;
-	bottom: 0;
 	background: #073569;
 	height: 40px;
 	width: 100%;
+	position: absolute;
+	bottom: 0;
 }
 
 #copyright {
@@ -95,6 +95,4 @@ a:visited {
 
 #wrapper {
 	min-height: 100%;
-	height: auto !important;
-	margin-bottom: -40px;
-}
+
