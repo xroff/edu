@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
 
+html {
+   height: 100%;
+}
+
 body {
 	padding: 0;
 	margin: 0;
 	background-color: #f2f2f2;
 	font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
 	min-width: 600px;
+	min-height: 100%;
 }
 
 a {
@@ -61,8 +66,19 @@ a:visited {
 	box-shadow: 0 0 10px #000000;
 }
 
+.logo {
+	height: 200px;
+	background: #8fc2fc url('img/vrnpano.jpg');
+}
+
+.logo h1 {
+	margin: 0;
+	padding: 0;
+	color: #ffffff;
+}
+
 #footer {
-	position: absolute;
+	float: top;
 	bottom: 0;
 	background: #073569;
 	height: 40px;
@@ -75,4 +91,10 @@ a:visited {
 	vertical-align: middle;
 	margin: 5px 5px 0 0;
 	float: right;
+}
+
+#wrapper {
+	min-height: 100%;
+	height: auto !important;
+	margin-bottom: -40px;
 }
